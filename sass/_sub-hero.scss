@@ -1,0 +1,120 @@
+div.hero-background {
+    background: #f0f0f0;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.background {
+    background: #fff;
+    box-shadow: 2px 2px 15px 0 rgba(135, 135, 135, 40%);
+    padding: 15px 40px;
+    width: 550px;
+    height: 220px;
+    position: relative;
+}
+
+div.background h4 {
+    padding: 2rem;
+    color: #555657;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.background p {
+    color: #A6A5AA;
+    padding-left: 2rem;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+div.hero-background-pos {
+    position: absolute;
+    right: 0px;
+    left: 66%;
+    background: #fff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 15px 0 rgba(135, 135, 135, 40%);
+}
+
+div.snapshot-team {
+    background: #f0f0f0;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+div.snapshot-team h2 {
+    color: #555657;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.snapshot-team p {
+    color: #A6A5AA;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-top: 0.8rem;
+}
+
+div.snapshot-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 4rem 6rem;
+}
+
+div.snapshot-box-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.box1 {
+    background: #fff;
+    padding: 10px 20px;
+    width: 220px;
+    height: 230px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px 0 rgba(135, 135, 135, 40%);
+}
+
+div.box3 {
+    background: #304353;
+    padding: 10px 20px;
+    width: 220px;
+    height: 230px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px 0 rgba(135, 135, 135, 40%);
+}
+
+div.box3 h5 {
+    text-align: center;
+    padding-top: 2rem;
+    color: #E44C65;
+    font-size: 1rem;
+}
+
+div.circle {
+    display: flex;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #bcc3c7;
+    margin-top: 2rem;
+    
+}
+
+div.box1 h5 {
+    text-align: center;
+    padding-top: 2rem;
+    color: #E44C65;
+    font-size: 1rem;
+}

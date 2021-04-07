@@ -1,0 +1,69 @@
+// 1em = 16px
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == 1280px {
+        @media only screen and (max-width: 80em) {
+            @content
+        }
+    }
+    @if $breakpoint == 1200px {
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+    }
+    @if $breakpoint == 1024px {
+        @media only screen and (max-width: 64em) {
+            @content
+        }
+    } 
+    @if $breakpoint == 768px {
+        @media only screen and (max-width: 48em) {
+            @content
+        }
+    }
+    @if $breakpoint == 720px {
+        @media only screen and (max-width: 45em) {
+            @content
+        }
+    }
+    @if $breakpoint == 480px {
+        @media only screen and (max-width: 30em) {
+            @content
+        }
+    }
+    @if $breakpoint == 375px {
+        @media only screen and (max-width: 23.4375em) {
+            @content
+        }
+    }
+    @if $breakpoint == 360px {
+        @media only screen and (max-width: 22.5em) {
+            @content
+        }
+    }
+    @if $breakpoint == 320px {  
+        @media only screen and (max-width: 20em) {
+            @content
+        }
+    }
+    @if $breakpoint == 1440px {
+        @media only screen and (min-width: 90em) {
+            @content
+        }
+    }
+    @if $breakpoint == 1600px {
+        @media only screen and (min-width: 100em) {
+            @content
+        }
+    }
+    @if $breakpoint == 1800px {
+        @media only screen and (min-width: 112.5em) {
+            @content
+        }
+    }
+    @if $breakpoint == 1920px {
+        @media only screen and (min-width: 120em) {
+            @content
+        }
+    }
+}
