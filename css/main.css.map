@@ -10,7 +10,8 @@
         "../sass/_sub-hero.scss",
         "../sass/_mixins.scss",
         "../sass/_footer.scss",
-        "../sass/_navigation.scss"
+        "../sass/_navigation.scss",
+        "../sass/_utilities.scss"
     ],
     "names": [],
     "file": "main.css"
