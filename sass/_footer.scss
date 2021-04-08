@@ -19,6 +19,10 @@ div.footer-content p {
     font-size: 1.6rem;
     letter-spacing: 2px;
     padding-top: 1.28rem;
+
+    @include respond(730px) {
+        margin: 0 10rem;
+    }
 }
 
 div.footer-input {

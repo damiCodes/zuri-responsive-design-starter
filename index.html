@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Webpage</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">    
 </head>
 <body>
     <div class="nav-bar">
         <div class="logo">Snapshot</div>
 
-        <a id="btnHamburger" href="#" class="header__menu open" title="Menu">
+        <a id="btnHamburger" href="#" class="header__menu util-desktop-hide" title="Menu">
             <span></span>
             <span></span>
             <span></span>
         </a>
         
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="util-mobile-hide">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
     <!-- Hero section -->
@@ -109,6 +111,13 @@
             <a href="#">Send Message</a>
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
-    </div>
+    </div>    
+
+    <script>
+        const btnHamburger = document.querySelector("#btnHamburger");
+        btnHamburger.addEventListener('click', function(){
+            btnHamburger.classList.toggle('open')
+        })
+    </script>
 </body>
 </html>

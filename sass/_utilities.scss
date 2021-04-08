@@ -1,0 +1,12 @@
+// visibility
+.util-mobile-hide {
+    @include respond(768px) { //max-width
+        display: none;
+    }
+}
+
+.util-desktop-hide {
+    @include respond(769px) { //min-width
+        display: none;
+    }
+}
