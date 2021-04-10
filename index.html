@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="nav-bar">
+        <div class="overlay"></div>
         <div class="logo">Snapshot</div>
 
         <a id="btnHamburger" href="#" class="header__menu util-desktop-hide" title="Menu">
@@ -25,6 +26,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
+
     </div>
 
     <!-- Hero section -->
@@ -115,8 +117,9 @@
 
     <script>
         const btnHamburger = document.querySelector("#btnHamburger");
+        const navBar = document.querySelector(".nav-bar")
         btnHamburger.addEventListener('click', function(){
-            btnHamburger.classList.toggle('open')
+            navBar.classList.toggle('open')
         })
     </script>
 </body>

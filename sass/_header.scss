@@ -2,9 +2,35 @@ div.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.6rem 9.6rem;
+    padding: 1.6rem 8vw;
     // width: 100vw;
     background: #304353;
+
+    &.open {
+        .header__menu {
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+        
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+        
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        background-image: linear-gradient(#304147, transparent);
+        height: 100vh;
+        top: 6rem;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
 }
 
 div.logo {
@@ -29,20 +55,6 @@ div.logo {
             margin-bottom: .6rem;
         }
     }    
-}
-
-.open {
-    > span:first-child {
-        transform: rotate(45deg);
-    }
-
-    > span:nth-child(2) {
-        opacity: 0;
-    }
-
-    > span:last-child {
-        transform: rotate(-45deg);
-    }
 }
 
 ul.nav-links {

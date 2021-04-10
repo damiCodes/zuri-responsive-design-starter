@@ -1,8 +1,11 @@
 @import 'mixins';
+@import 'animation';
+@import 'utilities';
+
 @import 'global';
-@import 'gallery';
+
 @import 'header';
 @import 'hero';
 @import 'sub-hero';
+@import 'gallery';
 @import 'footer';
-@import 'utilities';
