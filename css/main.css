@@ -176,10 +176,7 @@ ul li a:hover {
   text-decoration: none;
   color: #304147;
   font-size: 1.4rem;
-}
-
-.header__menu a:not(:last-child) {
-  margin-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 div.hero-section {

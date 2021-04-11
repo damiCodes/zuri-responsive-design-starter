@@ -100,9 +100,10 @@ ul li a:hover {
         text-decoration: none;
         color: #304147;
         font-size: 1.4rem;
+        padding: 2rem 0;
 
         &:not(:last-child) {
-            margin-bottom: 2rem;
+            // margin-bottom: 2rem;
         }
     }
 }
