@@ -76,6 +76,12 @@ html {
   }
 }
 
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 90%;
+  }
+}
+
 body.no-scroll {
   overflow: hidden;
 }
