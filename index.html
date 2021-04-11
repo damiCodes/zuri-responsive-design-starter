@@ -125,16 +125,19 @@
         const btnHamburger = document.querySelector("#btnHamburger");
         const navBar = document.querySelector(".nav-bar")
         const headerMenu = document.querySelector(".header__menu")
+        const body = document.querySelector("body")
         btnHamburger.addEventListener('click', function(){
             // navBar.classList.toggle('open')
             if (navBar.classList.contains("open")) {
                 navBar.classList.remove("open")
                 headerMenu.classList.remove("fade-in")
                 headerMenu.classList.add("fade-out")
+                body.classList.remove("no-scroll")
             } else {
                 navBar.classList.add("open")
                 headerMenu.classList.add("fade-in")
                 headerMenu.classList.remove("fade-out")
+                body.classList.add("no-scroll")
             }
         })
     </script>
