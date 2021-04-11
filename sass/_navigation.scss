@@ -25,7 +25,7 @@ div.nav-bar {
 
     .overlay {
         position: fixed;
-        background-image: linear-gradient(#304147, transparent);
+        background-image: linear-gradient(#0000008c, transparent);
         height: 100vh;
         top: 6rem;
         left: 0;
@@ -46,7 +46,7 @@ div.logo {
         height: .2rem;
         background-color: #bcc3c7;
         transition: all .3s ease-in-out;
-        transform-origin: 2px 1px;
+        transform-origin: 1.5px 0.5px;
 
         &:hover {
             cursor: pointer;

@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="nav-bar">
+        <div class="overlay fade"></div>
         <div class="logo">Snapshot</div>
 
         <a id="btnHamburger" href="#" class="nav__toggle util-desktop-hide" title="Menu">
@@ -26,7 +27,7 @@
             </ul>
         </div>
 
-        <div class="header__menu fade">
+        <div class="header__menu fade util-desktop-hide">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Gallery</a>
@@ -124,19 +125,26 @@
     <script>
         const btnHamburger = document.querySelector("#btnHamburger");
         const navBar = document.querySelector(".nav-bar")
+        const overlay = document.querySelector(".overlay")
         const headerMenu = document.querySelector(".header__menu")
+        const fade = document.querySelectorAll(".fade")
         const body = document.querySelector("body")
         btnHamburger.addEventListener('click', function(){
             // navBar.classList.toggle('open')
             if (navBar.classList.contains("open")) {
                 navBar.classList.remove("open")
-                headerMenu.classList.remove("fade-in")
-                headerMenu.classList.add("fade-out")
+                fade.forEach(function(element){
+                    element.classList.remove('fade-in');
+                    element.classList.add('fade-out');
+                    });
+                
                 body.classList.remove("no-scroll")
             } else {
                 navBar.classList.add("open")
-                headerMenu.classList.add("fade-in")
-                headerMenu.classList.remove("fade-out")
+                fade.forEach(function(element){
+                    element.classList.add('fade-in');
+                    element.classList.remove('fade-out');
+                });
                 body.classList.add("no-scroll")
             }
         })
