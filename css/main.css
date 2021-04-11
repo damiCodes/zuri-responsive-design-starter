@@ -252,6 +252,12 @@ div.background {
   }
 }
 
+@media only screen and (min-width: 90em) {
+  div.background {
+    height: auto;
+  }
+}
+
 div.background h4 {
   margin-bottom: 2rem;
   color: #555657;
@@ -280,6 +286,13 @@ div.hero-background-pos {
 @media only screen and (max-width: 40.625em) {
   div.hero-background-pos {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  div.hero-background-pos {
+    display: none;
+    height: auto;
   }
 }
 

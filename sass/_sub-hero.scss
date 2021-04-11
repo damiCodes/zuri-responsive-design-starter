@@ -18,6 +18,10 @@ div.background {
         height: auto;
         width: auto;
     }
+
+    @include respond(1440px) {
+        height: auto;
+    }
 }
 
 div.background h4 {
@@ -50,6 +54,11 @@ div.hero-background-pos {
 
     @include respond(650px) {
         display: none;
+    }
+
+    @include respond(1440px) {
+        display: none;
+        height: auto;
     }
 }
 
